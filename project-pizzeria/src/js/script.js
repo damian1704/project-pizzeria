@@ -52,7 +52,83 @@
     menuProduct: Handlebars.compile(document.querySelector(select.templateOf.menuProduct).innerHTML),
   };
 
+  class Produkt{ 
+    constructor(id, data){
+      const thisProduct = this;
+      thisProduct.id = id;
+      thisProduct.data = data;
+      thisProduct.renderInMenu();
+      thisProduct.initAccordion();
+      console.log('new Product:', thisProduct);
+    }
+    
+    renderInMenu(){
+      const thisProduct = this;
+    
+
+    /* generate HTML based on template */
+    const generatedHTML = templates.menuProduct(thisProduct.data);
+
+    /* create element using utils.createElementFromHTML */
+    thisProduct.element = utils.createDOMFromHTML(generatedHTML);
+
+    /* find menu container */
+    const menuContainer = document.querySelector(select.containerOf.menu);
+
+    /* add element to menu */
+    menuContainer.appenChild(thisProduct.element);
+ }
+
+    initAccordion(){
+    const thisProduct = this;
+
+    /* find the clickable trigger (the element that should react to clicking) */
+    const thisProduct.element = document.getElementById('thisProduct.element');
+
+    /* START: click event listener to trigger */
+    thisProduct.element.addEventListener('click', function(){
+    console.log('clicked');
+    
+
+      /* prevent default action for event */
+      event.preventDefault();
+
+      /* toggle active class on element of thisProduct */
+      thisProduct.classList.toggle('active');
+
+      /* find all active products */
+      const activeProducts = document.querySelectorAll('.product.active');
+
+
+      /* START LOOP: for each active product */
+      for(let activeProduct of activeProducts){
+
+        /* START: if the active product isn't the element of thisProduct */
+
+
+          /* remove class active for the active product */
+          activeProdukt.classList.remove('active');
+
+        /* END: if the active product isn't the element of thisProduct */
+      }
+
+      /* END LOOP: for each active product */
+    }
+
+    /* END: click event listener to trigger */
+  }
+}
+
+
   const app = {
+    initMenu: function(){
+      const thisApp = this;
+      console.log('thisApp.data:', thisApp.data);
+
+      for(let productData in thisApp.data.products){
+      new Product(productData, thisApp.data.products[productData]);
+      }
+    },
     init: function(){
       const thisApp = this;
       console.log('*** App starting ***');
@@ -61,7 +137,15 @@
       console.log('settings:', settings);
       console.log('templates:', templates);
     },
+
+    initData: function(){
+    const thisApp = this;
+    thisApp.data = dataSource;
+    },
   };
 
-  app.init();
+  app.init(); 
+  thisApp.initData();
+  thisApp.initMenu();
 }
+  
