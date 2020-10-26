@@ -116,7 +116,7 @@
 
           /* START: if the active product isn't the element of thisProduct */
           if (activeProduct != thisProduct.element) {
-            
+
             /* remove class active for the active product */
             activeProduct.classList.remove('active');
 
@@ -173,7 +173,7 @@
       const thisApp = this;
       console.log('*** App starting ***');
       console.log('thisApp:', thisApp);
-      console.log('classNames:", classNames);
+      console.log('classNames:", classNames');
       console.log("settings:", settings);
       console.log("templates:", templates);
     },
