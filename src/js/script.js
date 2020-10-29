@@ -191,7 +191,22 @@
             price -= option.price;
 
             /* END ELSE IF: if option is not selected and option is default */
-          }
+            }
+
+            const images = thisProduct.imageWrapper[imageId];
+
+              for( let imageId in imagesId) {
+                if(optionSelected) {
+                  imageId.classList.add(classNames.menuProduct.imageVisible);
+                }
+              }  
+
+              for( let imageId in imagesId) {
+                else(!optionSelected); {
+                  imageId.classList.remove(classNames.menuProduct.imageVisible);
+                }
+              }
+
           /* END LOOP: for each optionId in param.options */
         }
         /* END LOOP: for each paramId in thisProduct.data.params */
