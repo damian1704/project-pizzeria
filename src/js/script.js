@@ -54,8 +54,8 @@
 
   const classNames = {
     menuProduct: {
-    wrapperActive: 'active',
-    imageVisible: 'active',
+      wrapperActive: 'active',
+      imageVisible: 'active',
     },
 
     cart: {
@@ -318,7 +318,7 @@
       const thisApp = this;
       console.log('*** App starting ***');
       console.log('thisApp:', thisApp);
-      console.log('classNames:", classNames');
+      console.log('classNames:', classNames);
       console.log('settings:', settings);
       console.log('templates:', templates);
     },
