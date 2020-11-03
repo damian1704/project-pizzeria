@@ -357,6 +357,10 @@
       thisCart.dom.wrapper = element;
 
       thisCart.dom.toggleTrigger = thisCart.dom.wrapper.element.querySelector(select.cart.toggleTrigger);
+
+      thisCart.dom.productList = thisCart.dom.wrapper.element.querySelector(select.cart.productList);
+
+
     }
 
     initActions() {
@@ -369,7 +373,15 @@
     }
     
     add(menuProduct) {
-      //const thisCart = this;
+      const thisCart = this;
+      
+      const generatedHTML = templates.cartProduct(menuProduct);
+
+      thisCart.element = utils.createDOMFromHTML(generatedHTML);
+
+      const generatedDOM = document.querySelector(select.containerOf.cart); 
+
+      thisCart.dom.productList.appenChild(thisCart.element);
 
       console.log('adding product', menuProduct);
     }
@@ -378,7 +390,6 @@
   const app = {
     initMenu: function () {
       const thisApp = this;
-      console.log('thisApp.data:', thisApp.data);
 
       for (let productData in thisApp.data.products) {
         new Product(productData, thisApp.data.products[productData]);
@@ -405,13 +416,18 @@
       console.log('classNames:', classNames);
       console.log('settings:', settings);
       console.log('templates:', templates);
+
+      
+      thisApp.initMenu();
+      thisApp.initData();
+      thisApp.initCart();
+
+
     },
   };
 
   app.init();
-  app.initData();
-  app.initMenu();
-  app.initCart();
+
 }
 
 
