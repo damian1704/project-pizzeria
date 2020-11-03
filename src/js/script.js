@@ -404,8 +404,8 @@
     update() {
       const thisCart = this;
 
-      const thisCart.totalNumber = 0;
-      const thisCart.subtotalPrice = 0;
+      thisCart.totalNumber = 0;
+      thisCart.subtotalPrice = 0;
 
       for(let product of thisCart.products) {
         thisCart.subtotalPrice += product.price;
