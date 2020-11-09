@@ -1,3 +1,6 @@
+import {select, templates} from '../settings.js';
+import {AmountWidget} from './AmountWidget.js';
+
 export class Booking {
   constructor(element) {
     const thisBooking = this;

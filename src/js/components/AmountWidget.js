@@ -1,4 +1,5 @@
 import {select, settings} from '../settings.js';
+
 export class AmountWidget {
   constructor(element) {
     const thisWidget = this;
@@ -13,7 +14,7 @@ export class AmountWidget {
   getElements(element){
     const thisWidget = this;
 
-    thisWidget.element = element;
+    thisWidget.getElements = element;
     thisWidget.input = thisWidget.element.querySelector(select.widgets.amount.input);
     thisWidget.linkDecrease = thisWidget.element.querySelector(select.widgets.amount.linkDecrease);
     thisWidget.linkIncrease = thisWidget.element.querySelector(select.widgets.amount.linkIncrease);
