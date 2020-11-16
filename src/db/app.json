@@ -3,8 +3,8 @@
     {
       "id": "cake",
       "class": "small",
-      "name": "Zio Stefano's Doughnut",
-      "price": 9,
+      "name": "Italian cake",
+      "price": 15,
       "description": "Treat yourself with this soft, freshly baked cookie. The recipe has been handed down from generation to generation in our family and it has won us several first place prizes in local competitions.",
       "images": [
         "<img class=\"active\" src=\"images/doughnut.svg\">"
@@ -258,9 +258,9 @@
    "booking": [
     {
       "id": 1,
-      "date": "2020-11-12",
+      "date": "2020-11-17",
       "hour": "22:00",
-      "table": 2,
+      "table": 3,
       "duration": 2,
       "ppl": 3,
       "starters": ["lemonWater"]

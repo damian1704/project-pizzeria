@@ -1,7 +1,7 @@
 .header {
   padding: ($base-size * 5) 0 ($base-size * 8) 0;
   background: $color-dark;
-  color: $color-light;
+  color: $color-main;
 
   &__wrapper {
     position: relative;
@@ -30,12 +30,13 @@
     margin: 0;
     font-size: ($base-size * 1.5);
     font-weight: $font-light;
-    font-style: italic;
+    font-style: $font-family;
+
   }
 
 }
 
-.main-nav {
+.home-nav {
   position: absolute;
   @include flex(row, flex-start, flex-start);
   bottom: ($base-size * -8);
