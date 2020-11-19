@@ -3,8 +3,8 @@
     {
       "id": "cake",
       "class": "small",
-      "name": "Italian cake",
-      "price": 15,
+      "name": "Zio Stefano's Doughnut",
+      "price": 9,
       "description": "Treat yourself with this soft, freshly baked cookie. The recipe has been handed down from generation to generation in our family and it has won us several first place prizes in local competitions.",
       "images": [
         "<img class=\"active\" src=\"images/doughnut.svg\">"
@@ -37,13 +37,10 @@
               "label": "Espresso",
               "price": 1
             },
-            "tea": {
-              "label": "Italian tea",
+            "macchiato": {
+              "label": "Macchiato ",
               "price": 1
-            },
-            "wine"
-              "label": "Wine",
-              "price": 1
+            }
           }
         }
       }
@@ -55,14 +52,14 @@
       "description": "The true taste of Italy &ndash; homemade pizza as prepared by our grandmothers in old-fashoned brick ovens. Choose your favorite topping and enjoy your comfort food! All ingredients come straight from eco-friendly, trusted farms in the Italian countryside.",
       "images": [
         "<img class=\"active\" src=\"images/pizza/crust.svg\">",
-        "<img class=\"sauce-tomato\" src=\"images/pizza/tomato-sauce.svg\">",
-        "<img class=\"sauce-cream\" src=\"images/pizza/sour-cream.svg\">",
-        "<img class=\"toppings-salami\" src=\"images/pizza/salami.svg\">",
-        "<img class=\"toppings-olives\" src=\"images/pizza/olives.svg\">",
-        "<img class=\"toppings-redPeppers\" src=\"images/pizza/red-peppers.svg\">",
-        "<img class=\"toppings-greenPeppers\" src=\"images/pizza/green-peppers.svg\">",
-        "<img class=\"toppings-mushrooms\" src=\"images/pizza/mushrooms.svg\">",
-        "<img class=\"toppings-basil\" src=\"images/pizza/basil.svg\">"
+        "<img class=\"active sauce-tomato\" src=\"images/pizza/tomato-sauce.svg\">",
+        "<img class=\"active sauce-cream\" src=\"images/pizza/sour-cream.svg\">",
+        "<img class=\"active toppings-salami\" src=\"images/pizza/salami.svg\">",
+        "<img class=\"active toppings-olives\" src=\"images/pizza/olives.svg\">",
+        "<img class=\"active toppings-redPeppers\" src=\"images/pizza/red-peppers.svg\">",
+        "<img class=\"active toppings-greenPeppers\" src=\"images/pizza/green-peppers.svg\">",
+        "<img class=\"active toppings-mushrooms\" src=\"images/pizza/mushrooms.svg\">",
+        "<img class=\"active toppings-basil\" src=\"images/pizza/basil.svg\">"
       ],
       "params": {
         "sauce": {
@@ -111,10 +108,6 @@
             },
             "salami": {
               "label": "Salami",
-              "price": 3
-            },
-            "chicken": {
-              "label": "Chicken",
               "price": 3
             }
           }
@@ -203,14 +196,6 @@
             "pepper": {
               "label": "Black pepper",
               "price": 1
-            },
-            "maize": {
-              "label": "Maize",
-              "price": 1
-            },
-            "bacon": {
-              "label": "Bacon",
-              "price": 1
             }
           }
         }
@@ -221,7 +206,7 @@
   "event": [
     {
       "id": 1,
-      "date": "2020-11-12",
+      "date": "2020-04-18",
       "hour": "12:30",
       "table": 1,
       "repeat": false,
@@ -270,12 +255,12 @@
       "starters": ["lemonWater"]
     }
   ],
-   "booking": [
+  "booking": [
     {
       "id": 1,
-      "date": "2020-11-17",
+      "date": "2020-11-11",
       "hour": "22:00",
-      "table": 3,
+      "table": 2,
       "duration": 2,
       "ppl": 3,
       "starters": ["lemonWater"]
