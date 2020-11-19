@@ -2,9 +2,9 @@
   "product": [
     {
       "id": "cake",
-      "class": "small",
-      "name": "Zio Stefano's Doughnut",
-      "price": 9,
+      "class": "medium",
+      "name": "italian cake",
+      "price": 12,
       "description": "Treat yourself with this soft, freshly baked cookie. The recipe has been handed down from generation to generation in our family and it has won us several first place prizes in local competitions.",
       "images": [
         "<img class=\"active\" src=\"images/doughnut.svg\">"
@@ -37,8 +37,8 @@
               "label": "Espresso",
               "price": 1
             },
-            "macchiato": {
-              "label": "Macchiato ",
+            "wine": {
+              "label": "Wine",
               "price": 1
             }
           }
@@ -59,7 +59,8 @@
         "<img class=\"active toppings-redPeppers\" src=\"images/pizza/red-peppers.svg\">",
         "<img class=\"active toppings-greenPeppers\" src=\"images/pizza/green-peppers.svg\">",
         "<img class=\"active toppings-mushrooms\" src=\"images/pizza/mushrooms.svg\">",
-        "<img class=\"active toppings-basil\" src=\"images/pizza/basil.svg\">"
+        "<img class=\"active toppings-basil\" src=\"agimes/pizza/basil.svg\">"
+        
       ],
       "params": {
         "sauce": {
@@ -101,8 +102,8 @@
               "price": 2,
               "default": true
             },
-            "basil": {
-              "label": "Fresh basil",
+            "bacon": {
+              "label": "Bacon",
               "price": 2,
               "default": true
             },
@@ -188,13 +189,13 @@
               "label": "Cheese",
               "price": 1
             },
-            "herbs": {
-              "label": "Fresh herbs",
+            "maize": {
+              "label": "Maize",
               "price": 1,
               "default": true
             },
-            "pepper": {
-              "label": "Black pepper",
+            "pineapple": {
+              "label": "Pineapple",
               "price": 1
             }
           }
@@ -206,8 +207,8 @@
   "event": [
     {
       "id": 1,
-      "date": "2020-04-18",
-      "hour": "12:30",
+      "date": "2020-11-19",
+      "hour": "11:30",
       "table": 1,
       "repeat": false,
       "duration": 4,
@@ -216,40 +217,40 @@
     },
     {
       "id": 2,
-      "date": "2019-01-01",
-      "hour": "16:00",
+      "date": "2020-11-18",
+      "hour": "15:00",
       "table": 3,
-      "repeat": "daily",
+      "repeat": false,
       "duration": 2,
       "ppl": 3,
       "starters": ["bread", "lemonWater"]
     },
     {
       "id": 3,
-      "date": "2019-01-01",
-      "hour": "12:00",
+      "date": "2020-11-15",
+      "hour": "13:00",
       "table": 3,
-      "repeat": "daily",
+      "repeat": false,
       "duration": 2,
       "ppl": 3,
       "starters": ["bread", "lemonWater"]
     },
     {
       "id": 4,
-      "date": "2019-01-01",
-      "hour": "13:00",
+      "date": "2020-11-16",
+      "hour": "14:00",
       "table": 2,
-      "repeat": "daily",
+      "repeat": false,
       "duration": 4,
       "ppl": 3,
       "starters": []
     },
     {
       "id": 5,
-      "date": "2019-01-01",
-      "hour": "18:00",
+      "date": "2020-11-12",
+      "hour": "19:00",
       "table": 2,
-      "repeat": "daily",
+      "repeat": false,
       "duration": 2,
       "ppl": 3,
       "starters": ["lemonWater"]
@@ -258,7 +259,7 @@
   "booking": [
     {
       "id": 1,
-      "date": "2020-11-11",
+      "date": "2020-11-19",
       "hour": "22:00",
       "table": 2,
       "duration": 2,
