@@ -83,7 +83,7 @@
   }
 
   &__fill {
-    background: lighten($color-dark, 70%);
+    background: $color-success;
     transition-timing-function: cubic-bezier(0, 1, 0, 1);
     transition: width 100ms;
     box-shadow: none;
@@ -100,14 +100,11 @@
   position: relative;
   width: 320px;
   height: 320px;
-  border: 12px solid $color-dark; 
+  border: 12px solid $color-dark;
   margin: ($base-size * 4) auto;
   background: linear-gradient(to right, #e9dfc4 0%, #e9dfc4 1%, #ede3c8 2%, #ede3c8 24%, #ebddc3 25%, #e9dfc4 48%, #ebddc3 49%, #e6d8bd 52%, #e6d8bd 53%, #e9dbc0 54%, #e6d8bd 55%, #e6d8bd 56%, #e9dbc0 57%, #e6d8bd 58%, #e6d8bd 73%, #e9dbc0 74%, #e9dbc0 98%, #ebddc3 100%);
   background-size: ($base-size * 3);
   background-repeat: repeat;
-
-
-     
 
   > * {
     position: absolute;
@@ -140,8 +137,8 @@
     width: 100px;
     height: 70px;
     line-height: 50px;
-    background: #3498db;
     border: 5px solid $color-dark;
+    background: #3498db;
   }
 
   .table {
@@ -160,6 +157,11 @@
         border-radius: 50%;
       }
 
+    }
+
+    &.selected {
+      background: lighten($color-dark, 70%);
+      border: 1px solid $color-dark;
     }
 
     &.booked {
